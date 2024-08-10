@@ -1,4 +1,6 @@
-FROM maven:3.8.4-amazoncorretto-17 as build
+FROM ubuntu:letest AS build
+
+FROM maven:3.8.4-amazoncorretto-17
 
 COPY src /app/src
 COPY pom.xml /app
