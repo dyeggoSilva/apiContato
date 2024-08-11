@@ -1,10 +1,4 @@
-
-
-FROM ubuntu:latest AS build
-
-RUN apt-get update
-
-FROM maven:3.8.4-amazoncorretto-17
+FROM maven:3.8.4-amazoncorretto-17 as build
 
 COPY src /app/src
 COPY pom.xml /app
