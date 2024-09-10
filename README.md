@@ -52,6 +52,11 @@ docker build -t contatos .
 docker run -p 8080:8080 contatos
 ```
 
+## URL da execução local 
+
+- http://localhost:8080/
+- http://localhost:8080/swagger-ui/index.html
+
 
 # Autor
 
