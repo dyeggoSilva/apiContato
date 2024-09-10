@@ -4,10 +4,10 @@
 
 https://api-contato-protfolio.onrender.com
 
-Um projeto desenvilvido para uso geral.
+Um projeto desenvolvido para uso geral.
 
 A API foi criada com o intuito de receber os dados de visitantes em uma página web que tenham interece em orçamento ou contratar serviços. 
-Alem de percistir os dados em banco, a API tambem envia um email de recebimento para o usuário e para o ADM da página web em questão.
+Além de persistir os dados em banco, a API também envia um email de recebimento para o usuário e para o ADM da página web em questão.
 
 ## Exemplo de página web
 ![Mobile 1](https://github.com/dyeggoSilva/apiContato/blob/main/imagens/tela.png) 
