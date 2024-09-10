@@ -24,6 +24,7 @@ Alem de percistir os dados em banco, a API tambem envia um email de recebimento 
 - Maven
 - Docker
 - Lombok
+- Swagger UI
 ## Implantação em produção
 - Back end: Render
 - Banco de dados: Postgresql
