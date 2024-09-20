@@ -1,8 +1,10 @@
 # ApiContato
 
-# Sobre o projeto
+ ## URL da execução em produção
 
-https://api-contato-protfolio.onrender.com
+  https://api-contato-protfolio.onrender.com
+
+# Sobre o projeto
 
 Um projeto desenvolvido para uso geral.
 
@@ -25,6 +27,8 @@ Além de persistir os dados em banco, a API também envia um email de recebiment
 - Docker
 - Lombok
 - Swagger UI
+- Mockito
+- JUnit 5
 ## Implantação em produção
 - Back end: Render
 - Banco de dados: Postgresql
@@ -56,7 +60,6 @@ docker run -p 8080:8080 contatos
 
 - http://localhost:8080/
 - http://localhost:8080/swagger-ui/index.html
-
 
 # Autor
 
