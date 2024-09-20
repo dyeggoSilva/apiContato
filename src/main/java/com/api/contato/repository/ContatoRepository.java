@@ -1,6 +1,6 @@
-package com.api.contato.contatoRepository;
+package com.api.contato.repository;
 
-import com.api.contato.Entities.Contato;
+import com.api.contato.entities.Contato;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

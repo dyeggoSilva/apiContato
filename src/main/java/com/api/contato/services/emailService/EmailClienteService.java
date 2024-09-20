@@ -1,4 +1,4 @@
-package com.api.contato.emailService;
+package com.api.contato.services.emailService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;

@@ -1,7 +1,6 @@
-package com.api.contato.emailService;
+package com.api.contato.services.emailService;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
@@ -15,22 +14,18 @@ public class EmailAdmService {
 
     //função criada para enviar um email de notificação para o ADM
     private String enviarEmailADM(String nome){
-        String mensagem = nome +" acabou de mandar uma mensagem para você";
-
         try{
             SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
             simpleMailMessage.setFrom(remetente);
             simpleMailMessage.setSubject("NOVA MENSAGEM NO PORTFÓLIO");
             simpleMailMessage.setTo(remetente);
-            simpleMailMessage.setText(mensagem);
+            simpleMailMessage.setText(nome +" acabou de mandar uma mensagem para você");
             javaMailSender.send(simpleMailMessage);
-            return "Email enviado.";
+            return "Email enviado para o ADM";
         }catch (Exception e){
-            return "erro ao enviar o email.";
+            return "Erro ao enviar o email para o ADM";
         }
-
     }
-
     //função criada para enviar um email de notificação para o cliente
     public String enviarEmailCliente(String destinatario, String nome){
         String primeitoNome[];
@@ -47,9 +42,9 @@ public class EmailAdmService {
             simpleMailMessage.setText(mensagem);
             javaMailSender.send(simpleMailMessage);
             enviarEmailADM(primeitoNome[0]);
-            return "Email enviado.";
+            return "Email enviado. ";
         }catch (Exception e){
-            return "erro ao enviar o email.";
+            return "Erro ao enviar o email.";
         }
 
     }

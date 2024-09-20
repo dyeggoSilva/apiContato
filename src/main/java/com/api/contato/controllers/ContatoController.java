@@ -1,8 +1,9 @@
-package com.api.contato.contatoControllers;
+package com.api.contato.controllers;
 
-import com.api.contato.Dto.ContatoDTO;
-import com.api.contato.contatoService.ContatoService;
+import com.api.contato.dto.ContatoDTO;
+import com.api.contato.services.ContatoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,7 +17,7 @@ public class ContatoController {
     ContatoService contatoService;
     @PostMapping("/contato/add")
     public Object cadastroCurso(@RequestBody ContatoDTO data){
-        return contatoService.salvaContato(data);
+        return ResponseEntity.ok(contatoService.salvaContato(data));
     }
 
 
