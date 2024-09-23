@@ -26,7 +26,7 @@ Além de persistir os dados em banco, a API também envia um email de recebiment
 - Maven
 - Docker
 - Lombok
-- Swagger UI
+- Swagger UI (Java Doc)
 - Mockito
 - JUnit 5
 ## Implantação em produção
